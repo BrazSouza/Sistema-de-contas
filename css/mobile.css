@@ -1,0 +1,41 @@
+body {
+  background-color: #f9f9f9;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body .main {
+  max-width: 100%;
+  margin-top: 0.5em;
+  text-align: center;
+}
+
+body .main .score-mobile {
+  padding: 1em;
+  color: green;
+  border-radius: 0.5em;
+  font-size: 1em;
+  background-color: #fff;
+  box-shadow: 0px 1px 8px #cdcdcd;
+}
+
+body .main .score-mobile span cite {
+  color: #333;
+  font-style: normal;
+}
+
+body .main .newItem form {
+  margin: 5em 0;
+  font-weight: 600;
+}
+
+body .main .newItem form .incluir {
+  margin-top: 2em;
+  text-align: center;
+}
+
+body .main .newItem form .incluir .btn {
+  padding: 0.5em 1em;
+  font-size: 0.9em;
+  text-transform: uppercase;
+}
+/*# sourceMappingURL=mobile.css.map */

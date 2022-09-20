@@ -5,12 +5,97 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Sistema de controle</title>
-		<link rel="stylesheet" href="./css/main.css" />
-	</head>
-	<body class="bg-dark">
-		<h1 class="">TESTANDO</h1>
 
-		<script src="./node_modules/bootstrap/dist/css/bootstrap.min.css"></script>
-		<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+		<!-- CSS only -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+		<link rel="stylesheet" href="./css/main.css" />
+		<link rel="stylesheet" href="./css/mobile.css" />
+	</head>
+	<body>
+		<main class="main">
+			<div class="container">
+				<div class="row align-items-md-center justify-content-md-center row-cols-3 row-cols-md-3 g-2 g-md-3">
+					<div class="col">
+						<div class="score-mobile score">
+							Entradas: R$
+							<br />
+							<span class="incomes"> <cite>0.00</cite></span>
+						</div>
+					</div>
+
+					<div class="col">
+						<div class="score-mobile score">
+							Saídas: R$
+							<br />
+							<span class="expenses"> <cite>0.00</cite></span>
+						</div>
+					</div>
+
+					<div class="col">
+						<div class="score-mobile score">
+							Total: R$
+							<br />
+							<span class="total"> <cite>0.00</cite></span>
+						</div>
+					</div>
+				</div>
+
+				<!-- FORM -->
+				<div class="newItem">
+					<form class="row align-items-center justify-content-center row-cols-3 row-cols-md-4 mt-5">
+						<div class="col">
+							<div class="desc">
+								<label for="desc" class="form-label">Descrição</label>
+								<input type="text" class="form-control" id="desc" />
+							</div>
+						</div>
+
+						<div class="col">
+							<div class="amount">
+								<label for="amount" class="form-label">Valor</label>
+								<input type="number" class="form-control" id="amount" />
+							</div>
+						</div>
+
+						<div class="col">
+							<div class="type">
+								<label class="form-label" for="type">Tipo</label>
+								<select class="form-select" id="type">
+									<option>Entrada</option>
+									<option>Saída</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="col">
+							<div class="incluir">
+								<button id="btnNew" class="btn btn-primary">Incluir</button>
+							</div>
+						</div>
+					</form>
+				</div>
+				<!-- END FORM -->
+
+				<div class="report">
+					<table class="table">
+						<thead>
+							<tr>
+								<th>Descrição</th>
+								<th class="amount">Valor</th>
+								<th class="type">Tipo</th>
+								<th class="action"></th>
+							</tr>
+						</thead>
+						<tbody></tbody>
+					</table>
+				</div>
+			</div>
+		</main>
+
+		<!-- JavaScript Bundle with Popper -->
+		<script type="text/javascript" src="./javascript/script.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 	</body>
 </html>
